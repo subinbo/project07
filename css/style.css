@@ -1,0 +1,425 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; border: 0;}
+ul,li{list-style: none;}
+a{text-decoration: none; color: black;}
+.cf::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.cb{clear: both;}
+
+body{font-family: "맑은 고딕", 돋움, sans-serif; margin: 0; padding: 0;}
+img{margin: 0; padding: 0;}
+
+/* 헤더 */
+#header{
+    width: 1080px;
+    height: 130px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 999;
+}
+#header h1{
+    width: 88px;
+    height: 88px;
+    float: left;
+    padding: 20px 0 0 0;
+}
+#header .nav{
+    width: 992px;
+    height: 130px;
+    float: right;
+}
+
+#header .nav>ul>li{
+    position: relative;
+    float: left;
+    width: 140px;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+#header .nav ul .brand, #header .nav ul .menu, #header .nav ul .store, 
+#header .nav ul .membership, #header .nav ul .benefit, #header .nav ul .event, #header .nav ul .notice{
+    width: 140px;
+    height: 80px;
+    margin-top: 20px;
+}
+#header .nav>ul>li>a{
+    width: 140px;
+    height: 130px;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* 서브1 */
+#header .nav ul .brand .sub{
+    width: 140px;
+    height: 144px;
+    background: #cd0021;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    display: none;
+}
+#header .nav ul .brand .sub li{
+    padding: 3px 0;    
+}
+#header .nav ul .brand .sub li a{
+    text-align: center;
+    line-height: 2;
+    font-size: 15px;
+    color: white;
+}
+#header .nav ul .brand:hover{
+    background-color: #cd0021;
+}
+#header .nav ul .brand:hover a{
+    color: white;
+}
+
+#header .nav ul .brand:hover .sub{
+    display: block;
+}
+#header .nav ul .brand .sub ul li:hover{
+    background-color: rgba(48, 14, 14, 0.8)
+}
+
+/* 서브2 */
+#header .nav ul .menu .sub2{
+    width: 140px;
+    height: 288px;
+    background: #cd0021;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    display: none;
+}
+#header .nav ul .menu .sub2 li{
+    padding: 3px 0;    
+}
+#header .nav ul .menu .sub2 li a{
+    text-align: center;
+    line-height: 2;
+    font-size: 15px;
+    color: white;
+}
+#header .nav ul .menu:hover{
+    background-color: #cd0021;
+}
+#header .nav ul .menu:hover a{
+    color: white;
+}
+
+#header .nav ul .menu:hover .sub2{
+    display: block;
+}
+#header .nav ul .menu .sub2 ul li:hover{
+    background-color: rgba(48, 14, 14, 0.8)
+}
+
+/* 서브3 */
+#header .nav ul .store .sub3{
+    width: 140px;
+    height: 70px;
+    background: #cd0021;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    display: none;
+}
+#header .nav ul .store .sub3 li{
+    padding: 3px 0;    
+}
+#header .nav ul .store .sub3 li a{
+    text-align: center;
+    line-height: 2;
+    font-size: 15px;
+    color: white;
+}
+#header .nav ul .store:hover{
+    background-color: #cd0021;
+}
+#header .nav ul .store:hover a{
+    color: white;
+}
+
+#header .nav ul .store:hover .sub3{
+    display: block;
+}
+#header .nav ul .store .sub3 ul li:hover{
+    background-color: rgba(48, 14, 14, 0.8)
+}
+
+/* 서브4 */
+#header .nav ul .membership .sub4{
+    width: 140px;
+    height: 106px;
+    background: #cd0021;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    display: none;
+}
+#header .nav ul .membership .sub4 li{
+    padding: 3px 0;    
+}
+#header .nav ul .membership .sub4 li a{
+    text-align: center;
+    line-height: 2;
+    font-size: 15px;
+    color: white;
+}
+#header .nav ul .membership:hover{
+    background-color: #cd0021;
+}
+#header .nav ul .membership:hover a{
+    color: white;
+}
+
+#header .nav ul .membership:hover .sub4{
+    display: block;
+}
+#header .nav ul .membership .sub4 ul li:hover{
+    background-color: rgba(48, 14, 14, 0.8)
+}
+
+
+/* 서브5 */
+#header .nav ul .benefit .sub5{
+    width: 140px;
+    height: 70px;
+    background: #cd0021;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    display: none;
+}
+#header .nav ul .benefit .sub5 li{
+    padding: 3px 0;    
+}
+#header .nav ul .benefit .sub5 li a{
+    text-align: center;
+    line-height: 2;
+    font-size: 15px;
+    color: white;
+}
+#header .nav ul .benefit:hover{
+    background-color: #cd0021;
+}
+#header .nav ul .benefit:hover a{
+    color: white;
+}
+
+#header .nav ul .benefit:hover .sub5{
+    display: block;
+}
+#header .nav ul .benefit .sub5 ul li:hover{
+    background-color: rgba(48, 14, 14, 0.8)
+}
+
+/* 서브6 */
+#header .nav ul .event .sub6{
+    width: 140px;
+    height: 70px;
+    background: #cd0021;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    display: none;
+}
+#header .nav ul .event .sub6 li{
+    padding: 3px 0;    
+}
+#header .nav ul .event .sub6 li a{
+    text-align: center;
+    line-height: 2;
+    font-size: 15px;
+    color: white;
+}
+#header .nav ul .event:hover{
+    background-color: #cd0021;
+}
+#header .nav ul .event:hover a{
+    color: white;
+}
+
+#header .nav ul .event:hover .sub6{
+    display: block;
+}
+#header .nav ul .event .sub6 ul li:hover{
+    background-color: rgba(48, 14, 14, 0.8)
+}
+
+/* 서브7 */
+#header .nav ul .notice:hover{
+    background-color: #cd0021;
+}
+#header .nav ul .notice:hover a{
+    color: white;
+}
+
+
+.mobile{
+    display: none;
+}
+
+
+/* 배너 */
+#banner{
+    width: 100%;
+    height: 850px;
+    margin: 0 auto;
+    background-color: orange;
+}
+#banner .banner_mobile{display: none;}
+
+
+/* 베스트 콤비네이션 */
+#combination{
+    position: relative;
+    width: 100%;
+    height: 1005px;
+    margin: 0 auto;
+    background: url(../image/best_bottom2.jpg) center bottom no-repeat;
+    background-size: 100% 380px;
+} 
+#combination div h2{
+    font-size: 110px;
+    margin-left: 0;
+    text-align: center;
+    color: rgb(148, 148, 148);
+
+}
+#combination div h2 span{
+    color: black;
+}
+#combination .best_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+#combination .best_wrap .allow_left{
+    margin-top: 420px;
+    margin-left: 250px;
+    cursor: pointer;
+
+}
+#combination .best_wrap ul{
+    position: relative;
+    float: left;
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+}
+#combination .best_wrap ul li{
+    position: absolute;
+    margin-top: 100px;
+    text-align: center;
+    width: 800px;
+    height: 800px;
+}
+#combination .best_wrap ul li h3{
+    font-size: 3rem;
+    
+}
+#combination .best_wrap ul li p{
+    font-size: 1.4rem;
+}
+#combination .best_wrap .allow_right{
+    margin-top: 420px;
+    cursor: pointer;
+}
+#combination .best_wrap ul .best1{left: 0;}
+#combination .best_wrap ul .best2{left: 100%;}
+#combination .best_wrap ul .best3{left: 200%;}
+#combination .best_wrap ul .best4{left: 300%;}
+#combination .best_wrap ul .best5{left: 400%;}
+#combination .best_wrap ul .best6{left: 500%;}
+
+#combination .view{
+    clear: both;
+    position: absolute;
+    width: 250px;
+    height: 65px;
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
+    bottom: 20px;
+    left: 780px;
+}
+#combination .view a{
+    color: white;
+    font-size: 30px;
+    line-height: 65px;
+}
+
+
+/* 인포 */
+#info{
+    width: 1080px;
+    height: 1005px;
+    margin: 0 auto;
+    position: relative;
+}
+#info div{
+    float: left;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+#info .delivery{
+    clear: both;
+}
+#info .openwrap{
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+#info .openwrap h2{
+    color: #cd0021;
+}
+#info .openwrap div a img{
+    padding: 20px 0;
+}
+#info .openwrap p{
+    font-size: 15px;
+}
+#info .openwrap .open{
+    margin-top: 50px;
+}
+
+
+/* 푸터 */
+#footer{
+    width: 100%;
+    height: 125px;
+    margin: 0 auto;
+    background-color: #212121;
+    color: gray;
+    position: relative;
+}
+#footer .footer_wrap{
+    width: 1080px;
+    margin: 0 auto;
+    height: 125px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding: 10px 50px;
+    box-sizing: border-box;
+}
+#footer h1{
+    float: left;
+    margin-top: 10px;
+}
+#footer .footer_wrap div address{
+    margin-left: 250px;
+    font-style: normal;
+}
+#footer p{
+    margin-top: 20px;
+    margin-left: 250px;
+}
